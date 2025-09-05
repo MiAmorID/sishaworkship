@@ -550,3 +550,105 @@ body {
 @supports (padding: max(0px)) {
   .bottom-nav { padding-bottom: max(.8rem, env(safe-area-inset-bottom)); }
 }
+
+/* === Header Responsive Fix === */
+
+/* Mobile + Tablet base styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  padding: 1.5rem 2rem;
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+  white-space: nowrap;
+}
+
+.header .btn {
+  font-size: 1.4rem;
+  padding: .6rem 1.2rem;
+  white-space: nowrap;
+  border-radius: 50px;
+  margin-left: auto;
+}
+
+/* Menu button (hamburger) */
+#menu-btn {
+  font-size: 2.6rem;
+  color: var(--main-color);
+  cursor: pointer;
+  margin-left: 1rem;
+  display: none; /* hidden on desktop */
+}
+
+/* Mobile navbar dropdown */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block; /* show hamburger */
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.2rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .3s ease;
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    width: 100%;
+    padding: .5rem 0;
+  }
+
+  /* keep reserve button visible on mobile */
+  .header .btn {
+    margin-left: 0;
+    margin-top: 0;
+    order: 2;
+  }
+}
+
+/* Tablet and up: reset clean layout */
+@media (min-width: 769px) {
+  .header {
+    padding: 2rem 9%;
+  }
+  .header .navbar {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    clip-path: none !important;
+    background: transparent;
+    padding: 0;
+  }
+  .header .navbar a {
+    font-size: 1.7rem;
+    padding: 0;
+  }
+}
