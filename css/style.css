@@ -652,3 +652,21 @@ body {
     padding: 0;
   }
 }
+
+/* === Header "Reserve Now" button fix === */
+.header .btn {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* On very small screens make it even slimmer */
+@media (max-width: 480px) {
+  .header .btn {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.9rem;
+  }
+}
+
