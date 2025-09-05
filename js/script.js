@@ -39,3 +39,12 @@ var swiper = new Swiper(".review-slider", {
         }
     },
 });
+
+// === Mobile Navbar Toggle ===
+let menu = document.querySelector('.header .navbar');
+let menuBtn = document.querySelector('#menu-btn');
+
+menuBtn.onclick = () => {
+  menu.classList.toggle('active');
+  menuBtn.classList.toggle('fa-times'); // rotate to "X"
+};
