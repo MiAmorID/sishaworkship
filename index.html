@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisha Workshop</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">Sisha Workshop <i class="fas fa-smoking"></i></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+        </nav>
+
+        <a href="https://wa.me/6281281149928" target="_blank" class="btn">Reserve Now</a>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Cozy Hookah & Local Classics</h3>
+                <a href="https://drive.google.com/file/d/18FeouY04qXM8PWCuAoeJseAQIGPuMmoP/view?fbclid=PAZXh0bgNhZW0CMTEAAafjGu5903mB7ly0q-pVXe4RvgK0ph68idnrVN_sAViLMiDDm80ziaZKpVfpDw_aem_RpJbP3jNJZK04x7oTQwVRA" target="_blank" class="btn">
+  See Menu
+</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="image/home-img-1.png" alt="">
+            <img src="image/home-img-2.png" alt="">
+            <img src="image/home-img-3.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading">about us <span>why choose us</span></h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="image/about-img.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">Relax & Enjoy at Sisha Workshop</h3>
+                <p>
+                    Welcome to <strong>Sisha Workshop</strong>, your chill spot in East Jakarta. 
+                    We offer hookah (shisha), classic local menus, and a cozy atmosphere with sofas and tables.
+                    Perfect for hanging out with friends after a long day.
+                </p>
+                <ul>
+                    <li><strong>📍 Address:</strong> Jl. Raya Condet No.3, Batu Ampar, Jakarta Timur</li>
+                    <li><strong>🕒 Opens:</strong> 15:00 daily</li>
+                    <li><strong>📞 Phone:</strong> <a href="tel:081281149928">0812-8114-9928</a></li>
+                    <li><strong>💵 Price Range:</strong> Rp 25.000 – Rp 50.000</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">our menu <span>popular choices</span></h1>
+
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="image/menu/menu_page_1.jpg" alt="">
+                <div class="content">
+                    <h3>Main Courses</h3>
+                    <p>Nasi Goreng, Chicken Katsu, Spaghetti, Nasi Mandhi, and more…</p>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu/menu_page_5.jpg" alt="">
+                <div class="content">
+                    <h3>Snacks</h3>
+                    <p>Sosis Bakar, Dimsum, Kentang Goreng, Chicken Wings, Roti Bakar…</p>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu/menu_page_9.jpg" alt="">
+                <div class="content">
+                    <h3>Drinks</h3>
+                    <p>Coffee, Fresh Milk, Milo Blend, Thai Tea, Juices, Soda…</p>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu/menu_page_13.jpg" alt="">
+                <div class="content">
+                    <h3>Shisha Flavors</h3>
+                    <p>Double Apple, Mint, Blueberry Hills, Lady Killer, Ice Bubble Gum…</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- REVIEW (keep Swiper as is) -->
+    <section class="review" id="review">
+        <h1 class="heading">reviews <span>what people say</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-1.png" alt="">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>Best shisha place in Jakarta Timur! Cozy vibes & affordable.</p>
+                    <h3>A customer</h3>
+                    <span>happy guest</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+        <h1 class="heading">booking <span>reserve a table</span></h1>
+        <form action="">
+            <input type="text" placeholder="Name" class="box">
+            <input type="number" placeholder="Number" class="box">
+            <textarea placeholder="Message" class="box" cols="30" rows="5"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:081281149928"><i class="fas fa-phone"></i> 0812-8114-9928</a>
+                <a href="https://wa.me/6281281149928" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="https://www.instagram.com/warkopshisha/" target="_blank"><i class="fab fa-instagram"></i> @warkopshisha</a>
+                <a href="https://maps.google.com/?q=Jl.+Raya+Condet+No.3,+Jakarta+Timur" target="_blank"><i class="fas fa-map-marker-alt"></i> Jakarta Timur</a>
+            </div>
+        </div>
+        <div class="credit">created for <span>Sisha Workshop</span> | all rights reserved</div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="https://www.instagram.com/warkopshisha/" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+        <a href="#menu"><i class="fas fa-coffee"></i><span>Order</span></a>
+        <a href="https://maps.google.com/?q=Jl.+Raya+Condet+No.3,+Jakarta+Timur" target="_blank"><i class="fas fa-map-marker-alt"></i><span>Location</span></a>
+        <a href="https://wa.me/6281281149928" target="_blank"><i class="fab fa-whatsapp"></i><span>Contact</span></a>
+    </nav>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
